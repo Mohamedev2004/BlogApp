@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "./Image";
 import { Link } from "react-router-dom";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
+import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 
 const Navbar = () => {
     const [open,setOpen] = useState(false)
@@ -34,7 +34,7 @@ const Navbar = () => {
                 <Link to="">About</Link>
                 <SignedOut>
                     <Link to="/login">
-                        <button className="py-2 px-4 rounded-md bg-blue-800 text-white">Login</button>
+                        <button className="py-2 px-4 rounded-md bg-blue-800 text-white hover:bg-blue-900 transition">Login</button>
                     </Link>
                 </SignedOut>
                 <SignedIn>
