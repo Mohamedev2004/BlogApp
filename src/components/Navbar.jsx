@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className="md:hidden">
                 <div className="cursor-pointer text-4xl" onClick={()=>setOpen((prev) => !prev)}>{open ? "X" : "≡"}</div>
                 {/* MOBILE LINK LIST */}
-                <div className={`w-full h-screen flex flex-col items-center justify-center gap-8 font-medium text-lg absolute top-16 transition-all ease-in-out ${open ? "-right-0" : "-right-[100%]"}`}>
+                <div className={`w-full h-screen flex flex-col items-center justify-center bg-[#dbe3fe] gap-8 font-medium text-lg absolute top-16 transition-all ease-in-out ${open ? "-right-0" : "-right-[100%]"}`}>
                     <Link to="">Home</Link>
                     <Link to="">Trending</Link>
                     <Link to="">Most Popular</Link>
